@@ -19,4 +19,4 @@ for (var i = h+1; i < h+n+1; i++) {
     console.log(array[row][col])
 }
 // 問題
-https://paiza.jp/works/mondai/a_rank_level_up_problems/a_rank_snake_map_step1/edit?language_uid=javascript
+// https://paiza.jp/works/mondai/a_rank_level_up_problems/a_rank_snake_map_step1/edit?language_uid=javascript
