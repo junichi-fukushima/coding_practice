@@ -15,7 +15,7 @@ class Solution {
         if (strlen($s) < 1 ) return false;
         $isNextresult = false;
         $isBackresult = false;
-        for ($i=0; $i < strlen($s); $i++){
+        for ($i=0; $i < strlen($s); $i){
             // 隣り合わせ文字の比較をする
             $next = $i +1;
 
