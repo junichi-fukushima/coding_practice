@@ -1,22 +1,34 @@
 <?php
-class Solution
-{
+
+class Solution {
 
     /**
      * @param Integer[] $nums
-     * @return Integer[]
+     * @param Integer $val
+     * @return Integer
      */
-    function removeDuplicates(&$nums)
-    {
-        $result = []; // 結果用配列の作成
-        foreach ($nums as $num) {
-            if (!in_array($num, $result)) {
-                array_push($result, $num); // 修正: $nums を $num に変更
+    function removeElement(&$nums, $val) {
+
+        // キーを返してあげる
+        if (in_array($val, $nums)) {
+            foreach (array_keys($nums, $val) as $key) {
+                unset($nums[$key]);
             }
         }
-        var_dump($result);
+        return count($nums);
 
-        return count($result);
+        // 普通に削除してく
+        foreach ($nums as $k => $num) {
+            if ($num == $val) unset($nums[$k]);
+        }
+        return count($nums);
+
+        //
+        $length = count($nums);
+        for ($i = 0; $i < $length; $i++) {
+            if ($nums[$i] == $val) unset($nums[$i]);
+        }
+        return count($nums);
     }
 }
 

@@ -13,8 +13,6 @@ class Solution {
                 $writeIndex++;
             }
         }
-
-        var_dump($writeIndex);
         return $writeIndex;
     }
 }
