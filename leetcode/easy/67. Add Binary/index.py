@@ -18,7 +18,7 @@ class Solution:
                 total += int(b[j])
                 j -= 1
 
-            # 値があればそれぞれ足していく
+            # 値を剰余算で求める
             result.append(str(total % 2))
 
             carry = total // 2
